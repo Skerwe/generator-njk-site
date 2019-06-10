@@ -1,0 +1,6 @@
+{
+  "site": {
+    "title": "Nunjucks Static Site",
+    "description": "A Nunjucks and Gulp static site boilerplate."
+  }
+}
