@@ -2,19 +2,29 @@
 
 ## About
 
-Use Gulp to build SASS and Nunjucks templates, then start a development server locally with Browsersync. This is the starting point for a complete static website.
+Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. This is the starting point for a static website.
 
-## Usage
+## Getting Started
 
-1. Install the [gulp-cli](https://gulpjs.com/) globally  
-`npm install gulp-cli -g`
+### Dependencies
 
-2. Clone the repository with the name of your new project:  
+*__Note:__ if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
+
+Make sure these are installed first.
+
+- [Node.js](http://nodejs.org)
+- [Gulp Command Line Utility](http://gulpjs.com) `npm install --global gulp-cli`
+
+### Quick Start
+
+Clone the repository with the name of your new project:  
 `git clone https://Skerwe@bitbucket.org/Skerwe/nunjucks-static-site-boilerplate.git <project-name>`
 
-3. `cd <project-name>` and run the command `gulp`
-
-4. `gulp serve` will start the development server.
+1. In bash/terminal/command line, `cd` into your project directory.
+2. Run `npm install` to install required files and dependencies.
+3. When it's done installing, run one of the tasks to get going:
+    - `gulp` manually compiles files.
+    - `gulp serve` automatically compiles files and applies changes using [BrowserSync](https://browsersync.io/) when you make changes to your source files.
 
 ## License
 

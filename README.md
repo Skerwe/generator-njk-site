@@ -36,8 +36,8 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 
 [npm-image]: https://badge.fury.io/js/generator-njk-site.svg
 [npm-url]: https://npmjs.org/package/generator-njk-site
-[travis-image]: https://travis-ci.org/Skerwe/generator-njk-site.svg?branch=master
-[travis-url]: https://travis-ci.org/Skerwe/generator-njk-site
+[travis-image]: https://travis-ci.com/Skerwe/generator-njk-site.svg?branch=master
+[travis-url]: https://travis-ci.com/Skerwe/generator-njk-site
 [daviddm-image]: https://david-dm.org/Skerwe/generator-njk-site.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Skerwe/generator-njk-site
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-njk-site/badge.svg
