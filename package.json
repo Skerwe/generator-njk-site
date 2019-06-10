@@ -1,0 +1,82 @@
+{
+  "name": "generator-njk-site",
+  "version": "0.1.0",
+  "description": "A nunjucks and gulp static site generator",
+  "homepage": "https://github.com/Skerwe/generator-njk-site#readme",
+  "author": {
+    "name": "Quintin Henn",
+    "email": "quintin.henn@gmail.com",
+    "url": "http://skerwe.web.za"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skerwe/generator-njk-site.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "static-site",
+    "nunjucks",
+    "gulp",
+    "template"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skerwe/generator-njk-site/issues"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "yeoman-generator": "^4.0.1",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "acorn": "^6.1.1",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest"
+  }
+}
