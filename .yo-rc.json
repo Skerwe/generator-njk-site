@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Quintin Henn",
+      "authorEmail": "quintin.henn@gmail.com",
+      "authorUrl": "http://skerwe.web.za"
+    }
+  }
+}
