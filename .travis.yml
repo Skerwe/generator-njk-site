@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - v11
+  - v10
+  - v8
+after_script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
