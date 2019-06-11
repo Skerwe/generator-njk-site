@@ -14,8 +14,8 @@ module.exports = class extends Generator {
   prompting() {
     this.log(
       yosay(`
-        Welcome to the ${chalk.blue("indie")} ${chalk.red(
-        "Nunjucks and SASS with Gulp static site"
+        Welcome to the ${chalk.blue("Nunjucks and SASS with Gulp")} ${chalk.red(
+        "static site"
       )} generator!`)
     );
 
