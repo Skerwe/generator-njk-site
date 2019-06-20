@@ -2,6 +2,8 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Skerwe/generator-njk-site.svg)](https://greenkeeper.io/)
+
 > A Nunjucks and Sass with Gulp static site generator.
 
 ## Installation
