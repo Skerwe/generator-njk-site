@@ -1,3 +1,5 @@
+"use strict";
+
 const { src, dest, watch, series, parallel } = require("gulp");
 const data = require("gulp-data");
 const rimraf = require("gulp-rimraf");
@@ -12,7 +14,7 @@ const sass = require("gulp-sass");
 
 sass.compiler = require("node-sass");
 
-const config = {
+const path = {
   input: "app/",
   output: "dist/",
   scripts: {
@@ -43,80 +45,80 @@ const sassOptions = {
   outputStyle: "expanded"
 };
 const sassdocOptions = {
-  dest: config.styles.docs
+  dest: path.styles.docs
 };
 
 function sassTask() {
-  return src(config.styles.main)
+  return src(path.styles.main)
     .pipe(sass(sassOptions).on("error", sass.logError))
     .pipe(autoprefixer())
-    .pipe(dest(config.styles.output))
+    .pipe(dest(path.styles.output))
     .pipe(browserSync.stream());
 }
 
 function sassDocTask() {
-  return src(config.styles.input).pipe(sassdoc(sassdocOptions)).resume();
+  return src(path.styles.input).pipe(sassdoc(sassdocOptions)).resume();
 }
 
 function scriptTask() {
-  return src(
-    ["app/scripts/plugins.js", "app/scripts/main.js"]
-  ).pipe(concat({
+  return src([
+    "app/scripts/plugins.js",
+    "app/scripts/main.js"
+  ])
+  .pipe(concat({
     path: "main.js"
   }))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
-  .pipe(dest(config.scripts.output));
+  .pipe(dest(path.scripts.output))
+  .pipe(browserSync.stream());
 }
 
 function nunjucksTask() {
-  return src(config.nunjucks.pages)
+  return src(path.nunjucks.pages)
     .pipe(data(function () {
-      return require('./app/data.json')
+      return require("./app/data.json")
     }))
     .pipe(nunjucksRender({
       path: ["app/templates"]
-    })).pipe(
-      dest(config.output)
-    );
+    }))
+    .pipe(dest(path.output))
+    .pipe(browserSync.stream());
 }
 
 function imagesMinTask() {
-  return src(config.images.input)
+  return src(path.images.input)
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
     use: [pngquant()]
   }))
-  .pipe(dest(config.images.output));
+  .pipe(dest(path.images.output));
 }
 
 function cleanTask() {
-  return src(config.output, {
+  return src(path.output, {
     read: false,
     allowEmpty: true
   }).pipe(rimraf());
 }
 
 function copyStaticTask() {
-  return src(config.static.other).pipe(dest(config.output));
+  return src(path.static.other).pipe(dest(path.output));
 }
 
 function copyCssTask() {
-  return src(config.static.css).pipe(dest(config.styles.output));
+  return src(path.static.css).pipe(dest(path.styles.output));
 }
 
 function watchTask() {
-  watch(config.styles.input, sassTask);
-  watch([config.scripts.input], scriptTask).on('change', browserSync.reload);
-  watch([config.nunjucks.pages, config.nunjucks.templates], nunjucksTask).on('change', browserSync.reload);
+  watch(path.styles.input, sassTask);
+  watch([path.scripts.input], scriptTask);
+  watch([path.nunjucks.pages, path.nunjucks.templates], nunjucksTask);
 }
 
 function browserSyncTask() {
   browserSync.init({
     server: {
-      baseDir: config.output
+      baseDir: path.output
     }
   });
 }

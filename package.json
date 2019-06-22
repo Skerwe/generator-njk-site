@@ -1,6 +1,6 @@
 {
   "name": "generator-njk-site",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A nunjucks and gulp static site generator",
   "homepage": "https://github.com/Skerwe/generator-njk-site#readme",
   "author": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "acorn": "^6.1.1",
     "coveralls": "^3.0.4",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-prettier": "^5.0.0",
     "eslint-config-xo": "^0.26.0",
     "eslint-plugin-prettier": "^3.1.0",
