@@ -1,6 +1,6 @@
 # generator-njk-site
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge](https://badges.greenkeeper.io/Skerwe/generator-njk-site.svg)](https://greenkeeper.io/)
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 > A Nunjucks and Sass with Gulp static site generator.
 
@@ -44,3 +44,5 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 [daviddm-url]: https://david-dm.org/Skerwe/generator-njk-site
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-njk-site/badge.svg
 [coveralls-url]: https://coveralls.io/r/Skerwe/generator-njk-site
+[greenkeeper-image]: https://badges.greenkeeper.io/Skerwe/generator-njk-site.svg
+[greenkeeper-url]: https://greenkeeper.io/
