@@ -7,9 +7,8 @@ after_script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/cover
   && rm -rf ./coverage
 deploy:
   provider: npm
-  email: quintin.henn@gmail.com
-  api_key:
-    secure: iqaad10o/MyjFYIDwBMcJSW2JmHmnmkaA5xdbP8ZRSazXgx0AlPHg1cG/d+t+tEe2fdWtFSxfCSvdmUsnxoVNgnlc8SK4jOrEPP9nIXeB0L2bv50R/6yfA6F8Vt/qsdKAdIFo8qpVgdvwDw6ywdvwmg7cxLRYG5wLjF+I3ITehCex40d00dmkO6Jkhy94Nd4L7Ge8ly9r7XC0TMew4YL/b1WT971NNBYhvbWw460/QyMEsZ0xkyclBG0+hUAkuqtw4FJujDL3oI+fGExuluoh8RrncQsi9LVMiBqQQwCdgNB4dz3nhr7vt8shb6yU77H3q29sknySqmN+KGYQAY8LoYe5ec2ySNzeRPcyUNh4m6pkYi/arc0k0SGBYCu/9QWlOXEBcMXJIgJfugzayLe95PwCKoyqjJCpOIszOzNGBghS1if81DBwunODyaW3iVkelX9zr2NsiRKiAfJ/lpFla972zwWxKVeJ/hoCAJ34G5PArexVQNdOoRXaCph5GLmxszRR966KRZhgdaLhEVj6TGKyfkixMHrXTlEU0+vQ7rpli/SkhzBrdRZeVDfb681j827jH9utRMkVxV26fw2ckVALRq7zYMZL93QulZ7+c/BI7e2Y0lRrcvZmZA5+GjMlUZXWQM5INxJyUVVb1BtP3Neyo8zEYPS1Vk6NZVduiA=
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
   on:
     tags: true
     repo: Skerwe/generator-njk-site
