@@ -1,7 +1,5 @@
 # A Nunjucks and Gulp static site
 
-## About
-
 Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. This is the starting point for a static website.
 
 ## Getting Started
@@ -25,6 +23,10 @@ Clone the repository with the name of your new project:
 3. When it's done installing, run one of the tasks to get going:
     - `gulp` manually compiles files.
     - `gulp serve` automatically compiles files and applies changes using [BrowserSync](https://browsersync.io/) when you make changes to your source files.
+4. Alternatively run:
+    - `npm run build` to compile files.
+    - `npm start` to serve and watch files with BrowserSync.
+    - `npm test` run [TestCafe](https://devexpress.github.io/testcafe/) static page tests.
 
 ## License
 
