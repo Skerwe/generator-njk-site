@@ -16,12 +16,7 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-[*.njk]
-insert_final_newline = false
-indent_style = space
-indent_size = 2
-
-[*.scss]
+[*.{css,scss}]
 indent_style = space
 indent_size = 2
 
@@ -29,5 +24,10 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-[*.{diff,md}]
+[*.njk]
+insert_final_newline = false
+indent_style = space
+indent_size = 2
+
+[*.md]
 trim_trailing_whitespace = false

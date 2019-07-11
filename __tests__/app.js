@@ -23,8 +23,9 @@ describe("generator game: prompting for appname", () => {
   });
 
   it("created folder structure", () => {
+    assert.file(`${componentName}/tests/`);
     assert.file(`${componentName}/app/`);
-    assert.file(`${componentName}/app/pages/index.html`);
+    assert.file(`${componentName}/app/pages/index.njk`);
     assert.file(`${componentName}/app/scss/main.scss`);
     assert.file(`${componentName}/app/static/favicon.ico`);
   });
