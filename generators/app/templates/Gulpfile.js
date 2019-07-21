@@ -8,8 +8,9 @@ const autoprefixer = require('gulp-autoprefixer');
 const sassdoc = require('sassdoc');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
-const cssmin = require('gulp-cssmin');
+const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
+const sourcemaps = require('gulp-sourcemaps');
 const pngquant = require('imagemin-pngquant');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
@@ -55,7 +56,9 @@ function sassTask() {
   return src(path.styles.main)
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(cssmin())
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS({ compatibility: '*' }))
+    .pipe(sourcemaps.write())
     .pipe(dest(path.styles.output))
     .pipe(browserSync.stream());
 }
@@ -69,12 +72,12 @@ function scriptTask() {
     'app/scripts/plugins.js',
     'app/scripts/main.js'
   ])
-  .pipe(concat({
-    path: 'main.js'
-  }))
-  .pipe(uglify())
-  .pipe(dest(path.scripts.output))
-  .pipe(browserSync.stream());
+    .pipe(concat({
+      path: 'main.js'
+    }))
+    .pipe(uglify())
+    .pipe(dest(path.scripts.output))
+    .pipe(browserSync.stream());
 }
 
 function nunjucksTask() {
@@ -91,12 +94,12 @@ function nunjucksTask() {
 
 function imagesMinTask() {
   return src(path.images.input)
-  .pipe(imagemin({
-    progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
-  }))
-  .pipe(dest(path.images.output));
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      use: [pngquant()]
+    }))
+    .pipe(dest(path.images.output));
 }
 
 function cleanTask() {
@@ -112,8 +115,10 @@ function copyStaticTask() {
 
 function copyCssTask() {
   return src(path.static.css)
-  .pipe(cssmin({keepSpecialComments : 0}))
-  .pipe(dest(path.styles.output));
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS({ compatibility: '*' }))
+    .pipe(sourcemaps.write())
+    .pipe(dest(path.styles.output));
 }
 
 function watchTask() {

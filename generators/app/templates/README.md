@@ -4,7 +4,7 @@ Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. Thi
 
 ## Getting Started
 
-### Dependencies
+### Dependenciesv
 
 *__Note:__ if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
 
