@@ -4,7 +4,7 @@ const path = require("path");
 const assert = require("yeoman-assert");
 const helpers = require("yeoman-test");
 
-describe("generator game: prompting for appname", () => {
+describe("generator njk: prompting for site name", () => {
   const componentName = "dummy-site";
   beforeAll(() => {
     return helpers
@@ -31,7 +31,7 @@ describe("generator game: prompting for appname", () => {
   });
 });
 
-describe("generator game: give appname through arguments", () => {
+describe("generator njk: give site name through arguments", () => {
   const componentName = "dummy-site";
   beforeAll(() => {
     return helpers
