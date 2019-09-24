@@ -1,10 +1,10 @@
-# A Nunjucks and Gulp static site
+# A Nunjucks and Gulp static site boilerplate
 
 Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. This is the starting point for a static website.
 
 ## Getting Started
 
-### Dependencies
+### Prerequisites
 
 *__Note:__ if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
 
@@ -30,4 +30,4 @@ Clone the repository with the name of your new project:
 
 ## License
 
-MIT -- see [LICENSE](LICENSE)
+This project is licensed under the MIT License -- see the [LICENSE](LICENSE) file for details
