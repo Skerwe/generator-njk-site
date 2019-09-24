@@ -22,8 +22,8 @@
     "http-server": "^0.11.1",
     "imagemin-pngquant": "^8.0.0",
     "node-sass": "^4.12.0",
-    "sassdoc": "^2.7.0",
-    "testcafe": "^1.4.1"
+    "sassdoc": "^2.7.1",
+    "testcafe": "^1.5.0"
   },
   "scripts": {
     "build": "gulp",
