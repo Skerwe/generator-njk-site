@@ -32,7 +32,7 @@ module.exports = class extends Generator {
       }
     ];
 
-    return this.prompt(prompts).then(props => {
+    return this.prompt(prompts).then((props) => {
       this.options.appname = props.appname;
     });
   }
@@ -58,10 +58,10 @@ module.exports = class extends Generator {
   }
 
   end() {
-    this.log(`
-      Project ${chalk.red(
+    this.log(
+      `Project ${chalk.red(
         this.options.appname
-      )} completed. Thank you for using this generator. Good bye :)
-    `);
+      )} completed. Thank you for using this generator. Good bye :)`
+    );
   }
 };

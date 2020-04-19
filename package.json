@@ -77,6 +77,6 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest --testPathIgnorePatterns app/templates/*"
+    "test": "snyk test && jest --testPathIgnorePatterns app/templates/*"
   }
 }
