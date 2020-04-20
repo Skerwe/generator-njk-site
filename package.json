@@ -1,6 +1,6 @@
 {
   "name": "generator-njk-site",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A nunjucks and gulp static site generator",
   "homepage": "https://github.com/Skerwe/generator-njk-site#readme",
   "author": {
