@@ -31,7 +31,7 @@
     "chalk": "^3.0.0",
     "yeoman-generator": "^4.10.1",
     "yosay": "^2.0.2",
-    "snyk": "^1.339.3"
+    "snyk": "^1.341.1"
   },
   "devDependencies": {
     "acorn": "^7.1.0",
