@@ -15,15 +15,15 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-rimraf": "^1.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "html5-boilerplate": "^7.3.0",
-    "http-server": "^0.12.1",
+    "http-server": "^0.12.3",
     "imagemin-pngquant": "^8.0.0",
-    "node-sass": "^4.13.1",
-    "sassdoc": "^2.7.1",
-    "testcafe": "^1.8.4"
+    "node-sass": "^4.14.1",
+    "sassdoc": "^2.7.2",
+    "testcafe": "^1.8.8"
   },
   "scripts": {
     "build": "gulp",
