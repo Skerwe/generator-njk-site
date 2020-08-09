@@ -1,5 +1,7 @@
 # A Nunjucks and Gulp static site boilerplate
 
+![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/Skerwe/nunjucks-static-site-boilerplate?style=for-the-badge)
+
 Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. This is the starting point for a static website.
 
 ## Getting Started
