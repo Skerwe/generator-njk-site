@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "acorn": "^7.4.0",
+    "ajv": "^6.12.3",
     "coveralls": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
@@ -43,6 +44,7 @@
     "husky": "^4.2.3",
     "jest": "^26.2.2",
     "lint-staged": "^10.2.11",
+    "lodash": ">=4.17.19",
     "prettier": "^1.19.1",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.7.0"
@@ -86,8 +88,8 @@
     ]
   },
   "scripts": {
-    "pretest22": "eslint .",
-    "test": "jest",
+    "pretest": "eslint .",
+    "test": "snyk test && jest",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },

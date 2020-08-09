@@ -42,7 +42,7 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 [travis-url]: https://travis-ci.com/Skerwe/generator-njk-site
 [daviddm-image]: https://david-dm.org/Skerwe/generator-njk-site.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Skerwe/generator-njk-site
-[coveralls-image]: https://coveralls.io/repos/Skerwe/generator-njk-site/badge.svg
-[coveralls-url]: https://coveralls.io/r/Skerwe/generator-njk-site
+[coveralls-image]: https://coveralls.io/repos/github/Skerwe/generator-njk-site/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/Skerwe/generator-njk-site?branch=master
 [snyk-image]: https://snyk.io/test/github/Skerwe/generator-njk-site/badge.svg?targetFile=package.json
 [snyk-url]: https://snyk.io/test/github/Skerwe/generator-njk-site?targetFile=package.json
