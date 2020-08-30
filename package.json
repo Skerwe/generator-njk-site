@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "snyk": "^1.385.0",
+    "snyk": "^1.386.0",
     "yeoman-generator": "^4.11.0",
     "yosay": "^2.0.2"
   },
