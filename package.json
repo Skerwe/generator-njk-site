@@ -29,25 +29,25 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "snyk": "^1.393.0",
     "yeoman-generator": "^4.12.0",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "acorn": "^7.4.0",
-    "ajv": "^6.12.3",
+    "acorn": "^8.0.1",
+    "ajv": "^6.12.5",
     "coveralls": "^3.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-xo": "^0.29.1",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-xo": "^0.32.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.3",
-    "jest": "^26.2.2",
-    "lint-staged": "^10.2.11",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0",
     "lodash": ">=4.17.19",
-    "prettier": "^1.19.1",
+    "prettier": "^2.1.2",
+    "snyk": "^1.401.0",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^2.7.0"
+    "yeoman-test": "^3.0.0"
   },
   "jest": {
     "testEnvironment": "jsdom",

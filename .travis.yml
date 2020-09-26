@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "12"
-after_script: jest --coverage && coveralls < coverage/lcov.info
+after_success: jest --coverage && coveralls < coverage/lcov.info
 deploy:
   provider: npm
   email: $NPM_EMAIL
