@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
@@ -16,14 +16,14 @@
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "html5-boilerplate": "^8.0.0",
     "http-server": "^0.12.3",
-    "imagemin-pngquant": "^9.0.0",
-    "node-sass": "^4.14.1",
-    "sassdoc": "^2.7.2",
-    "testcafe": "^1.9.0"
+    "imagemin-pngquant": "^9.0.2",
+    "node-sass": "^5.0.0",
+    "sassdoc": "^2.7.3",
+    "testcafe": "^1.13.0"
   },
   "scripts": {
     "build": "gulp",
