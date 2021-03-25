@@ -1,7 +1,13 @@
 language: node_js
 node_js:
-  - "12"
-after_success: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+  - v12
+
+jobs:
+  include:
+    - stage: Produce Coverage
+      node_js: node
+      script: jest --coverage && coveralls < coverage/lcov.info
+
 deploy:
   provider: npm
   email: $NPM_EMAIL
