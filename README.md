@@ -25,12 +25,10 @@ or
 yo njk-site my-site-name
 ```
 
-## Getting To Know Yeoman
+## This project was built with
 
-- Yeoman has a heart of gold.
-- Yeoman is a person with feelings and opinions, but is very easy to work with.
-- Yeoman can be too opinionated at times but is easily convinced not to be.
-- Feel free to [learn more about Yeoman](http://yeoman.io/).
+* [Yeoman](http://yeoman.io/): The web's scaffolding tool
+* [A Nunjucks and Gulp static site boilerplate](https://bitbucket.org/Skerwe/nunjucks-static-site-boilerplate/src/master/)
 
 ## License
 
