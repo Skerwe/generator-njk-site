@@ -23,12 +23,12 @@ Clone the repository with the name of your new project:
 1. In bash/terminal/command line, `cd` into your project directory.
 2. Run `npm install` to install required files and dependencies.
 3. When it's done installing, run one of the tasks to get going:
-    - `gulp` manually compiles files.
-    - `gulp serve` automatically compiles files and applies changes using [BrowserSync](https://browsersync.io/) when you make changes to your source files.
-4. Alternatively run:
     - `npm run build` to compile files.
-    - `npm start` to serve and watch files with BrowserSync.
+    - `npm start` automatically compiles files and applies changes using [BrowserSync](https://browsersync.io/) when you make changes to your source files.
     - `npm test` run [TestCafe](https://devexpress.github.io/testcafe/) static page tests.
+4. Alternatively run:
+    - `gulp` manually compiles files.
+    - `gulp serve` to serve and watch files with BrowserSync.
 
 ## License
 

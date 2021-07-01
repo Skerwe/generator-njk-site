@@ -33,7 +33,7 @@ test.page `http://localhost:8080/about.html`
 });
 
 test.page `http://localhost:8080/contact.html`
-('about page test', async test => {
+('contact page test', async test => {
   const navigation = Selector('nav');
   const homeLink = Selector('a').withText('Home');
   const paragraph = Selector('p');
