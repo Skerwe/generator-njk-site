@@ -1,6 +1,8 @@
 # generator-njk-site
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
+[![NPM version][npm-image]][npm-url] 
+[![Node.js CI](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml) 
+[![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
 
 > A Nunjucks and Sass with Gulp static site generator.
 
