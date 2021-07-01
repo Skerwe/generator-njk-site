@@ -8,15 +8,15 @@ describe("generator njk: prompting for site name", () => {
   const componentName = "dummy-site";
   let tempPath;
 
-  beforeAll((done) => {
-    return helpers
+  beforeAll((done) =>
+    helpers
       .run(path.join(__dirname, "../generators/app"))
       .withPrompts({ appname: componentName })
       .on("end", done)
       .then((result) => {
         tempPath = result;
-      });
-  });
+      })
+  );
 
   it("created base project files", () => {
     assert.file([
@@ -50,15 +50,15 @@ describe("generator njk: give site name through arguments", () => {
   const componentName = "dummy-site";
   let tempPath;
 
-  beforeAll((done) => {
-    return helpers
+  beforeAll((done) =>
+    helpers
       .run(path.join(__dirname, "../generators/app"))
       .withArguments(componentName)
       .on("end", done)
       .then((result) => {
         tempPath = result;
-      });
-  });
+      })
+  );
 
   it("created project files and folders", () => {
     assert.file([

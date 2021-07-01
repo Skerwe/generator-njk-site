@@ -36,17 +36,20 @@
     "acorn": "^8.1.0",
     "ajv": "^7.2.3",
     "coveralls": "^3.1.0",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-config-xo": "^0.35.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-xo": "^0.37.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "husky": "^5.2.0",
     "jest": "^26.6.3",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^11.0.0",
     "lodash": "^4.17.21",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.7.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -70,6 +73,14 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "trailingComma": "none"
+  },
   "eslintConfig": {
     "extends": [
       "xo",
@@ -88,6 +99,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "lint:fix": "eslint . --fix",
+    "test": "jest --coverage"
   }
 }
