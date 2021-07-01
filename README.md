@@ -1,4 +1,4 @@
-# generator-njk-site
+# Nunjucks and Sass Static Site Generator
 
 [![NPM version][npm-image]][npm-url] 
 [![Node.js CI](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml) 
