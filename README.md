@@ -1,10 +1,10 @@
 # Nunjucks and Sass Static Site Generator
 
-[![NPM version][npm-image]][npm-url] 
-[![Node.js CI](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml) 
+[![NPM version][npm-image]][npm-url]
+[![Node.js CI](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml)
 [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
 
-> A Nunjucks and Sass with Gulp static site generator.
+> Generate a static website using Gulp with Sass styling and Nunjucks templates.
 
 ## Installation
 
