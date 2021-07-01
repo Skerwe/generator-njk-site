@@ -1,7 +1,5 @@
 # A Nunjucks and Gulp static site boilerplate
 
-![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/Skerwe/nunjucks-static-site-boilerplate?style=for-the-badge)
-
 Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. This is the starting point for a static website.
 
 ## Getting Started
@@ -16,9 +14,6 @@ Make sure these are installed first.
 - [Gulp Command Line Utility](http://gulpjs.com) `npm install --global gulp-cli`
 
 ### Quick Start
-
-Clone the repository with the name of your new project:  
-`git clone https://Skerwe@bitbucket.org/Skerwe/nunjucks-static-site-boilerplate.git <project-name>`
 
 1. In bash/terminal/command line, `cd` into your project directory.
 2. Run `npm install` to install required files and dependencies.
