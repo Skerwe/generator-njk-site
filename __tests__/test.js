@@ -8,13 +8,12 @@ describe("generator njk: prompting for site name", () => {
   const componentName = "dummy-site";
   let tempPath;
 
-  beforeAll((done) =>
+  beforeAll(() =>
     helpers
       .run(path.join(__dirname, "../generators/app"))
       .withPrompts({ appname: componentName })
-      .on("end", done)
       .then((result) => {
-        tempPath = result;
+        tempPath = result.cwd;
       })
   );
 
@@ -50,13 +49,12 @@ describe("generator njk: give site name through arguments", () => {
   const componentName = "dummy-site";
   let tempPath;
 
-  beforeAll((done) =>
+  beforeAll(() =>
     helpers
       .run(path.join(__dirname, "../generators/app"))
       .withArguments(componentName)
-      .on("end", done)
       .then((result) => {
-        tempPath = result;
+        tempPath = result.cwd;
       })
   );
 
