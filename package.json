@@ -28,23 +28,23 @@
     "url": "https://github.com/Skerwe/generator-njk-site/issues"
   },
   "dependencies": {
-    "chalk": "^4.1.1",
-    "yeoman-generator": "^5.4.0",
+    "chalk": "^4.1.2",
+    "yeoman-generator": "^5.4.1",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
     "coveralls": "^3.1.1",
-    "eslint": "^7.29.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-xo": "^0.37.0",
+    "eslint-config-xo": "^0.38.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.0",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^11.1.2",
     "lodash": "^4.17.21",
     "prettier": "^2.3.2",
     "yeoman-assert": "^3.1.1",
-    "yeoman-environment": "^3.4.1",
+    "yeoman-environment": "^3.5.1",
     "yeoman-test": "^6.2.0"
   },
   "engines": {
