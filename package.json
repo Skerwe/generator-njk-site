@@ -64,7 +64,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
+      "eslint __tests__ generators/app/index.js --fix",
       "git add"
     ],
     "*.json": [
@@ -97,8 +97,8 @@
     ]
   },
   "scripts": {
-    "pretest": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "pretest": "eslint __tests__ generators/app/index.js",
+    "lint:fix": "eslint __tests__ generators/app/index.js --fix",
     "test": "jest --coverage"
   }
 }
