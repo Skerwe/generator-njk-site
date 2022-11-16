@@ -2,7 +2,8 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-njk-site/actions/workflows/node.js.yml)
-[![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
+[![Coverage percentage][coveralls-image]][coveralls-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
 
 > Generate a static website using Gulp with Sass styling and Nunjucks templates.
 
@@ -34,14 +35,10 @@ yo njk-site my-site-name
 
 ## License
 
-MIT © [Quintin Henn](http://skerwe.web.za)
+This project is licensed under the MIT License -- see the [LICENSE](LICENSE) file for details
 
 [npm-image]: https://badge.fury.io/js/generator-njk-site.svg
 [npm-url]: https://npmjs.org/package/generator-njk-site
-[travis-image]: https://travis-ci.com/Skerwe/generator-njk-site.svg?branch=master
-[travis-url]: https://travis-ci.com/Skerwe/generator-njk-site
-[daviddm-image]: https://david-dm.org/Skerwe/generator-njk-site.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Skerwe/generator-njk-site
 [coveralls-image]: https://coveralls.io/repos/github/Skerwe/generator-njk-site/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/Skerwe/generator-njk-site?branch=master
 [snyk-image]: https://snyk.io/test/github/Skerwe/generator-njk-site/badge.svg?targetFile=package.json
