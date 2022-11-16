@@ -4,6 +4,8 @@ Use [Gulp](https://gulpjs.com/) to build Sass styles and Nunjucks templates. Thi
 
 ## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Prerequisites
 
 *__Note:__ if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
