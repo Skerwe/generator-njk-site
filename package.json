@@ -28,7 +28,7 @@
     "url": "https://github.com/Skerwe/generator-njk-site/issues"
   },
   "dependencies": {
-    "yosay": "^2.0.2"
+    "yosay": "^3.0.0"
   },
   "devDependencies": {
     "chalk": "4.1.2",
