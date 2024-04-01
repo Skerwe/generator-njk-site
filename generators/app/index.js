@@ -1,10 +1,8 @@
-"use strict";
+import Generator from "yeoman-generator";
+import chalk from "chalk";
+import yosay from "yosay";
 
-const Generator = require("yeoman-generator");
-const chalk = require("chalk");
-const yosay = require("yosay");
-
-module.exports = class extends Generator {
+export default class extends Generator {
   constructor(args, opts) {
     super(args, opts);
 
@@ -64,4 +62,4 @@ module.exports = class extends Generator {
       )} completed. Thank you for using this generator. Good bye :)`
     );
   }
-};
+}

@@ -1,69 +1,69 @@
-"use strict";
+import helpers from "yeoman-test";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const path = require("path");
-const assert = require("yeoman-assert");
-const helpers = require("yeoman-test");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-describe("generator njk: prompting for site name", () => {
+describe("generator-njk-site test", () => {
   const componentName = "dummy-site";
-  let tempPath;
+  let runResult;
 
-  beforeAll(() =>
-    helpers
-      .run(path.join(__dirname, "../generators/app"))
-      .withPrompts({ appname: componentName })
-      .then((result) => {
-        tempPath = result.cwd;
-      })
-  );
+  describe("generator njk: prompting for site name", () => {
+    beforeEach(async () => {
+      runResult = await helpers
+        .create(path.join(__dirname, "../generators/app"), {}, {})
+        .withAnswers({ appname: componentName })
+        .run();
+    });
 
-  it("created base project files", () => {
-    assert.file([
-      `${tempPath}/${componentName}/README.md`,
-      `${tempPath}/${componentName}/package.json`,
-      `${tempPath}/${componentName}/package-lock.json`,
-      `${tempPath}/${componentName}/Gulpfile.js`
-    ]);
+    afterEach(() => {
+      if (runResult) {
+        runResult.restore();
+      }
+    });
+
+    it("created base project files", () => {
+      runResult.assertFile(`${componentName}/README.md`);
+      runResult.assertFile(`${componentName}/package.json`);
+      runResult.assertFile(`${componentName}/package-lock.json`);
+      runResult.assertFile(`${componentName}/Gulpfile.js`);
+    });
+
+    it("created base dot files", () => {
+      runResult.assertFile(`${componentName}/.editorconfig`);
+      runResult.assertFile(`${componentName}/.gitattributes`);
+      runResult.assertFile(`${componentName}/.gitignore`);
+    });
+
+    it("created folder structure", () => {
+      runResult.assertFile(`${componentName}/tests/index.test.js`);
+      runResult.assertFile(`${componentName}/app/data.json`);
+      runResult.assertFile(`${componentName}/app/pages/index.njk`);
+      runResult.assertFile(`${componentName}/app/scss/main.scss`);
+      runResult.assertFile(`${componentName}/app/static/favicon.ico`);
+    });
   });
 
-  it("created base dot files", () => {
-    assert.file([
-      `${tempPath}/${componentName}/.editorconfig`,
-      `${tempPath}/${componentName}/.gitattributes`,
-      `${tempPath}/${componentName}/.gitignore`
-    ]);
-  });
+  describe("generator njk: give site name through arguments", () => {
+    beforeEach(async () => {
+      runResult = await helpers
+        .create(path.join(__dirname, "../generators/app"), {}, {})
+        .withArguments(componentName)
+        .run();
+    });
 
-  it("created folder structure", () => {
-    assert.file([
-      `${tempPath}/${componentName}/tests/`,
-      `${tempPath}/${componentName}/app/`,
-      `${tempPath}/${componentName}/app/pages/index.njk`,
-      `${tempPath}/${componentName}/app/scss/main.scss`,
-      `${tempPath}/${componentName}/app/static/favicon.ico`
-    ]);
-  });
-});
+    afterEach(() => {
+      if (runResult) {
+        runResult.restore();
+      }
+    });
 
-describe("generator njk: give site name through arguments", () => {
-  const componentName = "dummy-site";
-  let tempPath;
-
-  beforeAll(() =>
-    helpers
-      .run(path.join(__dirname, "../generators/app"))
-      .withArguments(componentName)
-      .then((result) => {
-        tempPath = result.cwd;
-      })
-  );
-
-  it("created project files and folders", () => {
-    assert.file([
-      `${tempPath}/${componentName}/Gulpfile.js`,
-      `${tempPath}/${componentName}/.editorconfig`,
-      `${tempPath}/${componentName}/app/data.json`,
-      `${tempPath}/${componentName}/app/images/.gitkeep`
-    ]);
+    it("created project files and folders", () => {
+      runResult.assertFile(`${componentName}/Gulpfile.js`);
+      runResult.assertFile(`${componentName}/.editorconfig`);
+      runResult.assertFile(`${componentName}/app/data.json`);
+      runResult.assertFile(`${componentName}/app/images/.gitkeep`);
+    });
   });
 });
